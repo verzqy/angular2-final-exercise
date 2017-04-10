@@ -1,0 +1,47 @@
+:host {
+  display: inline-block;
+  flex-direction: column;
+  width: 1000px;
+  height: 20px;
+  border: 2px solid;
+  background-color: #29394b;
+  padding: 10px;
+  color: #bdc2c5;
+}
+.tools {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  float: right;
+}
+#name {
+  width: 70%;
+}
+.ng-invalid:not(form):not(.ng-pristine):not(.required-invalid) {
+  border: 1px solid #d93a3e;
+}
+input[required].ng-invalid {
+  border-right: 5px solid #d93a3e;
+}
+input[required]:not(.required-invalid),
+input[required].ng-invalid:not(.required-invalid) {
+  border-right: 5px solid #37ad79;
+}
+.error {
+  color: #d93a3e;
+}
+button[type=submit] {
+  display: block;
+  background-color: darkgreen;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+}
+button[type=submit]:disabled {
+  background-color: #333;
+  color: #666;
+  cursor: default;
+}

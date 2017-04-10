@@ -1,0 +1,10 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <label for="name">New task: </label>
+    <input type="text" name="name" id="name" formControlName="name">
+    <a *ngIf="form.controls.name.errors?.pattern" class="error">X</a>
+    <div class="tools">
+      <button class="submit" type="submit" [disabled]="!form.valid">add</button>
+    </div>
+  </form>
+</div>

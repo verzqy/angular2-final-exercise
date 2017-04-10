@@ -1,0 +1,16 @@
+<div>
+  {{ doingTask.name }}
+
+  <div class="tools">
+    <div *ngIf="doingTask.doingOn" class="dateOn">  
+      {{ doingTask.doingOn | date: 'shortDate' }}
+    </div>
+    <a class="delete" (click)="onDelete(doingTask)">
+    remove
+  </a>
+    <a *ngIf="doingTask.doneStatus==='No'" class="done" (click)="onDone(doingTask)">
+    done
+  </a>
+  </div>
+
+</div>

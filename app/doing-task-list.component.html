@@ -1,0 +1,10 @@
+<div>
+<a class="button1" routerLink="/">ALL</a>
+<a class="button2" routerLink="/Yes">DONE</a>
+<a class="button3" routerLink="/No">NOT DONE</a>
+</div>
+<section>
+  <mw-doing-task mwSelected [ngClass]="{'doneStatus-Yes': doingTask.doneStatus==='Yes', 'doneStatus-No':doingTask.doneStatus==='No'}"
+    *ngFor="let doingTask of doingTasks" [doingTask]="doingTask" (delete)="onDoingTaskDelete($event)" (done)="onDoingTaskDone($event)"></mw-doing-task>
+  <mw-doing-task-form></mw-doing-task-form>
+</section>

@@ -1,0 +1,52 @@
+:host {
+  display: inline-block;
+  flex-direction: column;
+  width: 1000px;
+  height: 20px;
+  border: 2px solid;
+  padding: 10px;
+  color: black;
+  border-color: #29394b;
+}
+:host.doneStatus-No {
+  background-color: #53ace4;
+}
+:host.doneStatus-Yes {
+  background-color: #45bf94;
+}
+:host.hovering.doneStatus-No {
+    border-color: Yellow;
+    background-color: yellow;
+}
+:host.hovering.doneStatus-Yes {
+    border-color: Yellow;
+    background-color: yellow;
+}
+.tools {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  float: right;
+}
+.dateOn {
+  position: relative;
+  right: 10px;
+}
+.delete {
+  display: block;
+  background-color: #ec4342;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.done {
+  display: block;
+  background-color: #37ad79;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
