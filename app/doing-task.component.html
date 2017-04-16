@@ -3,7 +3,8 @@
 
   <div class="tools">
     <div *ngIf="doingTask.doingOn" class="dateOn">  
-      {{ doingTask.doingOn | date: 'shortDate' }}
+      <!--{{ doingTask.doingOn | date: 'shortDate' }}-->
+      {{doingTask.doingOn}}
     </div>
     <a class="delete" (click)="onDelete(doingTask)">
     remove
